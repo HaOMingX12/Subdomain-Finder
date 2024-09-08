@@ -4,20 +4,39 @@
 
 ### Deskripsi
 
-Subdomain Finder Tool ini adalah alat sederhana untuk menemukan subdomain dari domain yang diberikan. Skrip ini mendukung input baik dari file yang berisi daftar subdomain atau input single hostname/domain. 
+Subdomain Finder Tool ini adalah alat sederhana yang dirancang untuk membantu Anda menemukan subdomain dari domain yang ditentukan. Skrip ini mendukung dua metode input: dari file yang berisi daftar subdomain atau input satu hostname/domain. Dengan tampilan header yang menarik dan warna yang mencolok, alat ini memudahkan Anda dalam menemukan subdomain dengan efisien.
 
 ### Fitur
 
-- **Header Animasi**: Skrip ini menampilkan header yang disesuaikan dengan warna menarik.
-- **Input Massal**: Dapat membaca daftar subdomain dari file.
-- **Input Single Domain**: Memeriksa satu domain yang diberikan untuk subdomain.
+- **Header Animasi**: Header dengan styling khusus untuk tampilan yang menarik.
+- **Input Massal**: Kemampuan untuk membaca daftar subdomain dari file teks.
+- **Input Single Domain**: Memeriksa subdomain dari satu domain yang diberikan.
+- **Penggunaan Mudah**: Cukup dengan beberapa perintah di terminal untuk menjalankan alat ini.
 
-### Cara Penggunaan
+### Instalasi
+
+Untuk menggunakan alat ini, pastikan Anda telah memenuhi persyaratan berikut:
+
+1. **Clone repositori**: 
+    ```bash
+    git clone https://github.com/HaOMingX12/Subdomain-Finder
+    ```
+2. **Masuk ke direktori skrip**:
+    ```bash
+    cd Subdomain-Finder
+    ```
+3. **Instal dependensi**:
+    Pastikan Anda memiliki Python 3.x terinstal. Instal modul yang diperlukan menggunakan `pip`:
+    ```bash
+    pip install requests termcolor
+    ```
+
+### Penggunaan
 
 #### Input Massal dari File
 
-Untuk menggunakan fitur input massal, siapkan file teks (`wordlist.txt`) yang berisi daftar subdomain (satu per baris). Kemudian jalankan skrip dengan opsi `-f` diikuti dengan nama file dan `-d` untuk domain yang ingin diperiksa.
+Untuk memeriksa subdomain dari daftar yang disimpan dalam file, siapkan file teks (`wordlist.txt`) yang berisi daftar subdomain (satu subdomain per baris). Jalankan skrip dengan opsi `-f` diikuti dengan nama file dan opsi `-d` untuk domain yang ingin Anda periksa.
 
-Contoh:
+Contoh perintah:
 ```bash
 python subdomain_finder.py -f wordlist.txt -d example.com
